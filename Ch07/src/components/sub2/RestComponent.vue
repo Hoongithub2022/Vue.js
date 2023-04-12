@@ -25,7 +25,7 @@
         나이 : {{ user.age }}<br />
     </p>
 
-    <h4>Post 예제</h4>
+    <h4>Post</h4>
     <form v-on:submit.prevent="postUser">
         <table border="1">
             <tr>
@@ -52,7 +52,7 @@
         </table>
     </form>
 
-    <h4>Put 예제</h4>
+    <h4>Put</h4>
     <form v-on:submit.prevent="putUser">
         <table border="1">
             <tr>
@@ -79,7 +79,7 @@
         </table>
     </form>
 
-    <h4>Delete 예제</h4>
+    <h4>Delete</h4>
     <input type="text" v-model="inputText" placeholder="아이디 입력" />
     <button v-on:click="deleteUser">User 삭제</button>
 </template>
