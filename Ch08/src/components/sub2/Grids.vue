@@ -38,11 +38,14 @@
             <v-col cols="1" class="border text-center">1</v-col>
             <v-col cols="1" class="border text-center">1</v-col>
         </v-row>
-        <v-row class="mt-4">
-            <v-col md="12" lg="4" class="border text-center">md1</v-col>
-            <v-col md="12" lg="4" class="border text-center">md2</v-col>
-            <v-col md="12" lg="4" class="border text-center">md3</v-col>
-
+    </v-container>
+    <h4>반응형 레이아웃</h4>
+    <v-container fluid>
+        <v-row>
+            <v-col cols="12" sm="6" md="6" lg="3" class="border text-center">column1</v-col>
+            <v-col cols="12" sm="6" md="6" lg="3" class="border text-center">column2</v-col>
+            <v-col cols="12" sm="6" md="6" lg="3" class="border text-center">column3</v-col>
+            <v-col cols="12" sm="6" md="6" lg="3" class="border text-center">column4</v-col>
         </v-row>
     </v-container>
 </template>
