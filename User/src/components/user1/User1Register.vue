@@ -37,6 +37,7 @@ const user = reactive({
     hp: "",
     age: 0,
 })
+
 const user1Register = () => {
     axios
         .post("http://localhost:8080/Ch09/user1", user)
