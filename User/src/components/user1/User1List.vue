@@ -1,6 +1,5 @@
 <template>
     <h4>User1 목록</h4>
-
     <table border="1">
         <tr>
             <th>아이디</th>
@@ -21,6 +20,7 @@
         </tr>
     </table>
 </template>
+
 <script setup>
 import axios from "axios";
 import { onBeforeMount, ref } from "vue";
@@ -56,4 +56,5 @@ onBeforeMount(() => {
         });
 });
 </script>
+
 <style scoped></style>

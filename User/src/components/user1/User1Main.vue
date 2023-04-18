@@ -4,5 +4,7 @@
     <router-link to="/user1/list">목록</router-link>&nbsp;/
     <router-view></router-view>
 </template>
+
 <script setup></script>
+
 <style scoped></style>
