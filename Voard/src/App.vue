@@ -1,5 +1,5 @@
 <template>
-  <router-view></router-view>
+  <router-view />
 </template>
 
 <script setup>
@@ -7,8 +7,10 @@ import { onBeforeMount } from "vue";
 import { useRouter } from "vue-router";
 import axios from "axios";
 import { useStore } from "vuex";
+
 const router = useRouter();
 const userStore = useStore();
+
 onBeforeMount(() => {
   const accessToken = localStorage.getItem("accessToken");
   if (accessToken != null) {
@@ -30,3 +32,9 @@ onBeforeMount(() => {
   }
 });
 </script>
+
+<style>
+#app {
+  font-family: 'Jua', sans-serif;
+}
+</style>

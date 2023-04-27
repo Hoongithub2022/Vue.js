@@ -15,11 +15,11 @@
                 <v-col cols="8">
                   <v-text-field label="아이디" prepend-icon="mdi-account" variant="underlined" hide-details="true"
                     v-model="user.uid"></v-text-field>
-                  <v-text-field label="비밀번호" prepend-icon="mdi-lock" variant="underlined" hide-details="true"
-                    v-model="user.pass"></v-text-field>
+                  <v-text-field type="password" label="비밀번호" prepend-icon="mdi-lock" variant="underlined"
+                    hide-details="true" v-model="user.pass" @keyup.enter="btnLogin"></v-text-field>
                 </v-col>
                 <v-col cols="4">
-                  <v-btn block height="90" color="primary" @click="btnLogin">로그인</v-btn>
+                  <v-btn block height="90" color="primary" @click="btnLogin" @keyup.enter="btnLogin">로그인</v-btn>
                 </v-col>
               </v-row>
             </v-container>
